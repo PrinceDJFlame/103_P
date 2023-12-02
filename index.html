@@ -1,0 +1,52 @@
+ 
+<html>
+    <head>
+      <title>Face Recognisation App</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+     <link rel="stylesheet" href="style.css">
+    
+    </head>
+  
+    <body id="body">
+      
+    <div class="container">
+      
+      <center>
+        <h1 id="h1">App for recognising FACES</h1>
+        <br><br>
+  
+        <p style="font-size: 22px;">This model is trained to identify the following faces: </p>
+  
+        <label>Webcam View - </label>
+        <h3>Dad</h3>
+        <br><br>
+        <h3>Mum</h3>
+        <br><br>
+        <h3>Leo</h3>
+        <br><br>
+        <h3>Me</h3>
+        <br><br><br>
+        <label>Webcam View: </label>
+        <div id="camera"></div>
+        <br><br><hr id="hr">
+        <div id="results"></div>
+        <br><br><hr id="hr">
+        <button onclick="take_snapshot();" class="btn btn-danger">Take Photo</button>
+        <br><br>
+        <button onclick="check();" class="btn btn-info">Identify Picture</button>
+        <br><br>
+        <p style="font-size: 22px;">Who :  </p>
+        <p style="font-size: 22px;">Accuracy :  </p>
+      </center>
+  
+    </div>
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
